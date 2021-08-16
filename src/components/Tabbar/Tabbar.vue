@@ -5,7 +5,6 @@
       route
       active-color="#EC514E"
       inactive-color="#171717"
-      fixed
       placeholder 
     >
       <van-tabbar-item
@@ -64,9 +63,9 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .van-tabbar
-  // height 115px
+  height 115px
   span
     font-size 24px
   img

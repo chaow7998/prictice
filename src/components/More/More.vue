@@ -4,7 +4,7 @@
       <div class="line"></div>
       <div class="title">{{title}}</div>
     </div>
-    <div class="right">
+    <div class="right" v-if="hiddenicon == false">
       <div class="more">查看更多</div>
       <img src="../../../static/images/首页icon/icon-sy-go@3x.png" alt="" />
     </div>
@@ -14,7 +14,11 @@
 <script>
 export default {
   props:{
-    title:String
+    title:String,
+    hiddenicon:{
+      type:Boolean,
+      default:false
+    }
   },
   data() {
     return {};
